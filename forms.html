@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="auther", content="Fouad Abdelhady">
+    <title>Personnal Data</title>
+  </head>
+
+  <body style="background-color: #2f4f4f;" text="black">
+    
+   <div name="main dev" style="background-color: #2e6e6e;">
+        
+        <div ></div>
+        <form action="post">
+        <div name="subMainDiv" style="border-color: aliceblue; border-style: solid; border-width: 1px; margin-top: 31px;">
+           
+                <h5 style="background-color: #5f9ea0; display: inline; position: fixed; top: 0; left: 15px;">Personnal Data</h5><br>
+            
+            <div name="urName" style="background-color: #3e858b; height: 60px; display: inline-flex; margin-left: 15px;">
+                <h5>Your Name</h5>
+            </div>
+            <!--First Part of the form firs name, last name-->
+            <div name="nameInfo" style="background-color: #5f9ea0;  display: block; margin-left: 10px; margin-top: -30px; padding-top: 50px; padding-left: 10px; border-style:solid; border-width: 1px; padding-bottom: 10px; border-color: whitesmoke;">
+                <div style="height: 20px;"></div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td> <label for="fName">First Name </label> </td>
+                            <td> : </td>
+                            <td> <input id="fName" type="text"  placeholder="ex.Mohamed" required/> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="sName">Second Name </label> </td>
+                            <td> : </td>
+                            <td> <input id="sName" type="text" placeholder="ex.Hesham" required/> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!--Second Part of the form -->
+            <div style="margin-top: 30px; margin-left: 10px; padding-bottom: 10px;">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td> <label for="phone">Your Phone </label> </td>
+                            <td> : </td>
+                            <td> <input id="phone" type="tel"  placeholder="Includeing Country Code" maxlength="14" minlength="14" required/> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="email">Email </label> </td>
+                            <td> : </td>
+                            <td> <input id="email" type="email" placeholder="Your email here" required/> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="password">Password </label> </td>
+                            <td> : </td>
+                            <td> <input id="password" type="password"  minlength="8" placeholder="8 characters at least" required/> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="rePassword">Re-Password </label> </td>
+                            <td> : </td>
+                            <td> <input id="rePassword" type="password" placeholder="Re-enter your password" required/> </td>
+                        </tr>
+                    </tbody>
+                </table><br>
+
+                <input type="radio" name="male" id="genderMale"> <label for="genderMale">Male</label><br>
+                <input type="radio" name="female" id="genderFemale"> <label for="genderFemale">Female</label><br><br>
+
+                <input type="checkbox" name="education" id="student"><label for="student">Student</label> <br>
+                <input type="checkbox" name="education" id="graduate"><label for="graduate">Graduate</label> <br><br>
+
+                <select>
+                    <option selected>AUC</option>
+                    <option>BUE</option>
+                    <option>CU</option>
+                    <option>MIU</option>
+                </select> <br><br>
+                <button type="submit" style="width: 150px; height: 40px; color: #e7e9e9; background-color: rgb(51, 50, 50); border-style: none;">SUBMIT</button>
+
+            </div>
+
+        </div>
+    </form>
+   </div>
+
+  </body>
+
+  <footer style="margin-top: 50px; color: white;">
+   <div>
+    <a href="mailto: fouad.abd-elhady@outlook.com" style="color: #e7e9e9; ">Contact us</a>
+   </div>
+  </footer>
+
+</html>
